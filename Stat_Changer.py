@@ -46,43 +46,45 @@ class Battle:
             self.monster_addresses.append(MonsterAddress(self.m_point, monster))
 
     def write(self):
-        i = 0
-        for monster in self.monster_ID_list:
-            write_address(pid, battle.monster_addresses[i].HP, dictionary.stat_list[monster].max_HP)
-            write_address(pid, battle.monster_addresses[i].Max_HP, dictionary.stat_list[monster].max_HP)
-            write_address(pid, battle.monster_addresses[i].element, dictionary.stat_list[monster].element)
-            write_address(pid, battle.monster_addresses[i].display_element,
-                          dictionary.stat_list[monster].element)
-            write_address(pid, battle.monster_addresses[i].atk, dictionary.stat_list[monster].ATK)
-            write_address(pid, battle.monster_addresses[i].og_atk, dictionary.stat_list[monster].ATK)
-            write_address(pid, battle.monster_addresses[i].mat, dictionary.stat_list[monster].MAT)
-            write_address(pid, battle.monster_addresses[i].og_mat, dictionary.stat_list[monster].MAT)
-            write_address(pid, battle.monster_addresses[i].df, dictionary.stat_list[monster].DF)
-            write_address(pid, battle.monster_addresses[i].og_df, dictionary.stat_list[monster].DF)
-            write_address(pid, battle.monster_addresses[i].mdf, dictionary.stat_list[monster].MDF)
-            write_address(pid, battle.monster_addresses[i].og_mdf, dictionary.stat_list[monster].MDF)
-            write_address(pid, battle.monster_addresses[i].spd, dictionary.stat_list[monster].SPD)
-            write_address(pid, battle.monster_addresses[i].og_spd, dictionary.stat_list[monster].SPD)
-            write_address(pid, battle.monster_addresses[i].a_av, dictionary.stat_list[monster].A_AV)
-            write_address(pid, battle.monster_addresses[i].m_av, dictionary.stat_list[monster].M_AV)
-            write_address(pid, battle.monster_addresses[i].p_immune, dictionary.stat_list[monster].P_Immune)
-            write_address(pid, battle.monster_addresses[i].m_immune, dictionary.stat_list[monster].M_Immune)
-            write_address(pid, battle.monster_addresses[i].p_half, dictionary.stat_list[monster].P_Half)
-            write_address(pid, battle.monster_addresses[i].m_half, dictionary.stat_list[monster].M_Half)
-            write_address(pid, battle.monster_addresses[i].e_immune, dictionary.stat_list[monster].E_Immune)
-            write_address(pid, battle.monster_addresses[i].e_half, dictionary.stat_list[monster].E_Half)
-            write_address(pid, battle.monster_addresses[i].status_res,
-                          dictionary.stat_list[monster].Status_Resist)
-            write_address(pid, battle.monster_addresses[i].death_res,
-                          dictionary.stat_list[monster].Death_Resist)
-            i += 1
-        i = 0
-        for monster in self.monster_unique_ID_list:
-            write_address(pid, static_addresses.exp[i], dictionary.stat_list[monster].EXP)
-            write_address(pid, static_addresses.gold[i], dictionary.stat_list[monster].Gold)
-            write_address(pid, static_addresses.item_drop[i], dictionary.stat_list[monster].Drop_Item)
-            write_address(pid, static_addresses.drop_chance[i], dictionary.stat_list[monster].Drop_Chance)
-            i += 1
+        if options.monster_change == 1:
+            i = 0
+            for monster in self.monster_ID_list:
+                write_address(pid, battle.monster_addresses[i].HP, dictionary.stat_list[monster].max_HP)
+                write_address(pid, battle.monster_addresses[i].Max_HP, dictionary.stat_list[monster].max_HP)
+                write_address(pid, battle.monster_addresses[i].element, dictionary.stat_list[monster].element)
+                write_address(pid, battle.monster_addresses[i].display_element,
+                              dictionary.stat_list[monster].element)
+                write_address(pid, battle.monster_addresses[i].atk, dictionary.stat_list[monster].ATK)
+                write_address(pid, battle.monster_addresses[i].og_atk, dictionary.stat_list[monster].ATK)
+                write_address(pid, battle.monster_addresses[i].mat, dictionary.stat_list[monster].MAT)
+                write_address(pid, battle.monster_addresses[i].og_mat, dictionary.stat_list[monster].MAT)
+                write_address(pid, battle.monster_addresses[i].df, dictionary.stat_list[monster].DF)
+                write_address(pid, battle.monster_addresses[i].og_df, dictionary.stat_list[monster].DF)
+                write_address(pid, battle.monster_addresses[i].mdf, dictionary.stat_list[monster].MDF)
+                write_address(pid, battle.monster_addresses[i].og_mdf, dictionary.stat_list[monster].MDF)
+                write_address(pid, battle.monster_addresses[i].spd, dictionary.stat_list[monster].SPD)
+                write_address(pid, battle.monster_addresses[i].og_spd, dictionary.stat_list[monster].SPD)
+                write_address(pid, battle.monster_addresses[i].a_av, dictionary.stat_list[monster].A_AV)
+                write_address(pid, battle.monster_addresses[i].m_av, dictionary.stat_list[monster].M_AV)
+                write_address(pid, battle.monster_addresses[i].p_immune, dictionary.stat_list[monster].P_Immune)
+                write_address(pid, battle.monster_addresses[i].m_immune, dictionary.stat_list[monster].M_Immune)
+                write_address(pid, battle.monster_addresses[i].p_half, dictionary.stat_list[monster].P_Half)
+                write_address(pid, battle.monster_addresses[i].m_half, dictionary.stat_list[monster].M_Half)
+                write_address(pid, battle.monster_addresses[i].e_immune, dictionary.stat_list[monster].E_Immune)
+                write_address(pid, battle.monster_addresses[i].e_half, dictionary.stat_list[monster].E_Half)
+                write_address(pid, battle.monster_addresses[i].status_res,
+                              dictionary.stat_list[monster].Status_Resist)
+                write_address(pid, battle.monster_addresses[i].death_res,
+                              dictionary.stat_list[monster].Death_Resist)
+                i += 1
+        if options.drop_change == 1:
+            i = 0
+            for monster in self.monster_unique_ID_list:
+                write_address(pid, static_addresses.exp[i], dictionary.stat_list[monster].EXP)
+                write_address(pid, static_addresses.gold[i], dictionary.stat_list[monster].Gold)
+                write_address(pid, static_addresses.item_drop[i], dictionary.stat_list[monster].Drop_Item)
+                write_address(pid, static_addresses.drop_chance[i], dictionary.stat_list[monster].Drop_Chance)
+                i += 1
 
     def read(self):
         monster_list = []
@@ -191,11 +193,24 @@ class MonsterAddress:
         self.unique_index = m_point + 0x264 - monster * 0x388, 1
 
 
-folder = "Base"
+class Options:
+    def __init__(self):
+        self.mod = 'Base'
+        self.monster_change = 1
+        self.drop_change = 1
+        pass
+
+
 cwd = os.getcwd()
 pid = get_pid()
-dictionary = LoDDict(cwd, folder)
+options = Options()
+dictionary = LoDDict(cwd, options.mod)
 static_addresses = StaticAddresses(emulator_offset=0)
-battle = Battle()
-battle.write()
-battle.read()
+
+while True:
+    while read_address(pid, static_addresses.encounter_ID) == 41215:
+        time.sleep(1)
+
+    battle = Battle()
+    battle.write()
+    battle.read()
