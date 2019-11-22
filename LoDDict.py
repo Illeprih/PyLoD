@@ -107,8 +107,8 @@ class StaticAddresses:
         self.encounter_ID[0] = self.encounter_ID[0] + emulator_offset
         self.m_point[0] = self.m_point[0] + emulator_offset
         self.c_point[0] = self.c_point[0] + emulator_offset
-        for address in range(len(self.monster_list)):
-            self.monster_list[address][0] = self.monster_list[address][0] + emulator_offset
+        #for address in range(len(self.monster_list)):
+            #self.monster_list[address][0] = self.monster_list[address][0] + emulator_offset
         self.disc[0] = self.disc[0] + emulator_offset
         self.party_count[0] = self.party_count[0] + emulator_offset
         self.monster_count[0] = self.monster_count[0] + emulator_offset

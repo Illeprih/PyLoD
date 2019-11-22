@@ -13,18 +13,19 @@ def get_pid():
 
 
 def get_offset():
-    disc = read_address(pid, static_addresses.disc)
     party_count = read_address(pid, static_addresses.party_count)
     disc_offset = {1: 0xD80, 2: 0x0, 3: 0x1458, 4: 0x1B0}
     char_offset = {1: 0x180, 2: -0x180, 3: 0x420, 4: 0x540, 5: 0x180, 6: 0x350, 7: 0x2F0, 8: -0x180}
     if party_count == 3:
         slot2 = read_address(pid, static_addresses.character_slot[1])
         slot3 = read_address(pid, static_addresses.character_slot[2])
+        print(slot2)
+        print(slot3)
         party_offset = char_offset[slot2] + char_offset[slot3]
     else:
         party_offset = 0
 
-    return disc_offset[disc] - party_offset
+    return disc_offset[read_address(pid, static_addresses.disc)] - party_offset
 
 
 class Battle:
@@ -35,7 +36,7 @@ class Battle:
         self.monster_count = read_address(pid, static_addresses.monster_count)
         self.monster_ID_list = []
         for monster in range(self.monster_count):
-            address = static_addresses.monster_list[monster]
+            address = list(static_addresses.monster_list[monster])
             address[0] += get_offset()
             self.monster_ID_list.append(read_address(pid, address))
         self.monster_unique_ID_list = []
@@ -208,9 +209,10 @@ dictionary = LoDDict(cwd, options.mod)
 static_addresses = StaticAddresses(emulator_offset=0)
 
 while True:
-    while read_address(pid, static_addresses.encounter_ID) == 41215:
+    while read_address(pid, static_addresses.encounter_value) != 41215:
+        print('No battle')
         time.sleep(1)
-
+    time.sleep(1)
     battle = Battle()
     battle.write()
     battle.read()
