@@ -105,7 +105,7 @@ class Battle:
                 monster_list[monster].read(monster)
                 print('{}\t\tElement: {}\t\tHP: {}\t\tMax HP: {}\t\tATK: {}\t\tMAT: {}\t\tDEF: {}\t\tMDEF: {}'
                       '\t\tA-AV: {} \t\tM-AV: {}\t\tSpeed: {}\t\tTurn: {}\t\tItem Drop: {}\t\tDrop Chance: {}%'.format
-                      (self.monster_ID_list[monster],
+                      (dictionary.stat_list[self.monster_ID_list[monster]].name,
                        dictionary.num2element[monster_list[monster].element], monster_list[monster].HP,
                        monster_list[monster].Max_HP, monster_list[monster].atk, monster_list[monster].mat,
                        monster_list[monster].df, monster_list[monster].mdf, monster_list[monster].a_av,
