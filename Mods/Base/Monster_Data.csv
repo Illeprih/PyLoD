@@ -1,0 +1,190 @@
+M_ID,M_name,HP,Element,AT,MAT,DF,MDF,Speed,A_AV,M_AV,P_Immune,M_Immune,P_Half,M_Half,E_Immune,E_Half,Status_Resist,Death_Resist,EXP,Gold,Drop,Drop_Chance,M_extra_name
+257,Knight of Sandora,4,Fire,2,2,40,50,40,0,0,0,0,0,0,0,0,255,0,2,3,Healing Potion,100,Knight of Sandora(Seles)
+256,Commander,14,Dark,2,4,40,40,40,0,0,0,0,0,0,0,0,255,128,20,20,Burn Out,100,Commander I
+21,Assassin Cock,3,Wind,2,2,100,120,45,0,0,0,0,0,0,0,0,99,0,5,6,Healing Potion,10,Assassin Cock
+38,Trent,5,Earth,2,2,160,40,30,0,0,0,0,0,0,0,0,99,0,4,9,Pellet,10,Trent
+8,Goblin,4,Fire,2,1,120,120,40,0,0,0,0,0,0,0,0,0,0,4,6,Detonate Rock,10,Goblin
+24,Berserk Mouse,2,Dark,1,1,80,120,45,0,0,0,0,0,0,0,0,0,0,3,3,Healing Potion,10,Berserk Mouse
+134,Hellena Warden,9,Fire,3,3,100,100,50,0,0,0,0,0,0,0,0,99,0,6,9,None,100,Hellena Warden I
+261,Fruegel,90,Earth,5,3,100,80,50,0,0,0,0,0,0,0,0,0,0,300,50,Knight Shield,100,Fruegel I
+259,Hellena Warden,12,Fire,3,3,100,100,50,0,0,0,0,0,0,0,0,0,0,1,0,Healing Potion,100,Hellena Warden(F)
+260,Senior Warden,20,Fire,4,8,100,100,50,0,0,0,0,0,0,0,0,0,0,0,0,Healing Potion,100,Senior Warden(F)
+27,Vampire Kiwi,13,Dark,4,6,80,120,70,0,0,0,0,0,0,0,0,0,0,8,9,Healing Potion,8,Vampire Kiwi
+45,Mole,16,Earth,6,5,160,80,50,0,0,0,0,0,0,0,0,0,0,11,9,Angel's Prayer,8,Mole
+59,Crescent Bee,9,Wind,5,5,100,100,60,0,0,0,0,0,0,0,0,0,0,10,6,Spinning Gale,8,Crescent Bee
+0,Mantis,20,Earth,7,5,150,75,50,0,0,0,0,0,0,0,0,0,0,12,6,Pellet,8,Mantis
+46,Screaming Bat,12,Dark,5,9,80,120,70,0,0,0,0,0,0,0,0,0,0,8,6,Healing Potion,8,Screaming Bat
+104,Slime,20,Earth,6,5,80,60,50,0,0,0,0,0,0,0,0,0,0,11,6,Body Purifier,10,Slime I
+148,Slime,20,Earth,6,5,80,60,50,0,0,0,0,0,0,0,0,0,0,11,6,Body Purifier,10,Slime II
+64,Ugly Balloon,35,Wind,6,6,70,200,60,0,0,0,0,0,0,0,0,0,0,10,9,Poison Guard,2,Ugly Balloon
+94,Orc,24,Dark,7,5,120,40,60,0,0,0,0,0,0,0,0,0,0,10,6,Dark Mist,10,Orc
+13,Evil Spider,30,Earth,8,6,80,60,60,0,0,0,0,0,0,0,0,0,0,12,12,Angel's Prayer,8,Evil Spider
+332,Urobolus,280,Earth,8,8,80,60,50,0,0,0,0,0,0,0,0,0,0,400,50,Wargod's Amulet,100,Urobolus
+130,Sandora Soldier,40,Fire,8,8,100,100,50,0,0,0,0,0,0,0,0,0,0,25,30,Healing Potion,50,Sandora Soldier(Hoax)
+258,Sandora Elite,280,Dark,10,11,80,120,60,0,0,0,0,0,0,0,0,0,0,200,50,Healing Breeze,100,Sandora Elite I
+273,Sandora Elite,280,Dark,10,11,80,120,60,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Sandora Elite I(Clone)
+265,Kongol,256,Earth,10,10,100,50,60,0,0,0,0,0,0,0,0,0,0,300,50,Power Wrist,100,Kongol I
+4,Sea Dragon,33,Fire,8,11,80,120,70,0,0,0,0,0,0,0,0,0,0,14,9,Burn Out,10,Sea Dragon
+68,Crocodile,32,Water,10,9,160,50,50,0,0,0,0,0,0,0,0,0,0,17,6,Pellet,10,Crocodile
+28,Myconido,30,Earth,6,13,80,180,80,0,0,0,0,0,0,0,0,0,0,11,8,Body Purifier,10,Myconido
+22,Merman,45,Water,9,11,100,80,60,0,0,0,0,0,0,0,0,0,0,15,12,Spear,20,Merman
+131,Sandora Soldier,51,Fire,9,9,100,100,60,0,0,0,0,0,0,0,0,0,0,14,9,Healing Potion,8,Sandora Soldier(F)
+132,Sandora Soldier,64,Water,8,11,80,120,70,0,0,0,0,0,0,0,0,0,0,11,12,Sun Rhapsody,10,Sandora Soldier(W)
+135,Commander,128,Dark,11,9,120,80,70,0,0,0,0,0,0,0,0,0,0,17,9,Attack Ball,100,Commander II
+74,Magma Fish,25,Fire,9,11,80,120,80,0,0,0,0,0,0,0,0,0,0,10,6,Healing Potion,10,Magma Fish I
+157,Magma Fish,24,Fire,8,11,80,120,80,0,0,0,0,0,0,0,0,0,0,10,6,Healing Potion,10,Magma Fish II
+100,Red Hot,40,Fire,9,9,100,100,60,0,0,0,0,0,0,0,0,0,0,14,6,Mind Purifier,8,Red Hot
+92,Salamander,42,Fire,11,10,140,60,50,0,0,0,0,0,0,0,0,0,0,17,9,Sun Rhapsody,8,Salamander
+33,Fire Spirit,26,Fire,8,13,100,160,60,0,0,0,0,0,0,0,0,0,0,13,12,Spirit Cloak,10,Fire Spirit I
+150,Fire Spirit,26,Fire,9,13,100,160,60,0,0,0,0,0,0,0,0,0,0,13,12,Spirit Cloak,2,Fire Spirit II
+308,Virage(Head),360,Non-Elemental,16,17,80,120,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Wounded Virage(Head)
+309,Virage(Body),240,Non-Elemental,16,9,100,100,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Wounded Virage(Body)
+310,Virage(Arm),48,Non-Elemental,14,9,100,100,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Wounded Virage(Arm)
+333,Fire Bird,640,Fire,13,16,80,80,45,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Fire Bird
+334,Fire Ball,8,Fire,12,12,80,100,45,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Fire Ball
+90,Mandrake,96,Water,10,14,60,120,60,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Mandrake
+35,Run Fast,64,Thunder,12,12,100,80,60,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Run Fast
+19,Lizard Man,40,Earth,14,12,160,40,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Lizard Man
+88,Man Eating Bud,128,Dark,13,12,100,100,80,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Man Eating Bud
+115,Tricky Bat,32,Wind,8,15,80,120,70,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Tricky Bat
+275,Feyrbrand,480,Wind,18,12,100,80,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Feyrbrand
+287,Greham,350,Wind,13,15,120,100,60,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Greham
+66,Crystal Golem,160,Light,19,18,120,160,80,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Crystal Golem
+107,Plague Rat,64,Earth,12,16,60,120,80,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Plague Rat
+15,Strong Man,80,Earth,18,13,120,80,60,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Strong Man
+58,Gargoyle,100,Dark,16,16,80,160,70,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Gargoyle
+55,Living Statue,51,Earth,14,13,160,80,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Living Statue
+325,Drake the Bandit,1200,Wind,20,17,80,80,70,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Drake the Bandit
+326,Wire,120,Non-Elemental,13,13,120,80,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Wire
+327,Bomb,64,Non-Elemental,30,30,150,50,70,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Bomb
+288,Shirley,640,Light,15,15,80,120,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Shirley
+289,Shana,120,Light,15,15,80,120,55,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Shirley(Shana)
+290,Albert,120,Wind,17,15,100,100,45,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Shirley(Albert)
+302,Gorgaga,160,Non-Elemental,16,16,100,80,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Gorgaga
+303,Serfius,200,Fire,20,20,100,100,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Serfius
+304,Danton,240,Earth,23,8,120,80,45,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Danton
+305,Atlow,266,Dark,16,16,80,100,55,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Atlow
+269,Lloyd,399,Non-Elemental,20,20,100,100,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Lloyd(Arena)
+129,Hellena Warden,120,Fire,17,16,100,100,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Hellena Warden II
+133,Senior Warden,150,Fire,20,16,130,80,60,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Senior Warden
+329,Jiango,1280,Earth,23,18,160,80,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Jiango
+105,Fowl Fighter,100,Fire,16,19,80,120,60,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Fowl Fighter
+262,Fruegel,1000,Earth,25,19,100,80,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Fruegel II
+263,Rodriguez,400,Wind,21,21,100,100,70,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Rodriguez
+264,Guftas,500,Dark,23,17,120,60,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Guftas
+103,Knight of Sandora,180,Fire,21,21,100,100,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Knight of Sandora(Black Castle)
+17,Hell Hound,150,Fire,18,29,80,160,60,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Hell Hound
+102,Sandora Elite,380,Dark,28,25,100,120,80,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Sandora Elite II
+266,Kongol,1000,Earth,32,21,140,80,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Kongol II
+267,Doel,600,Thunder,30,30,100,100,55,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Doel
+268,Dragoon Doel,1800,Thunder,32,34,120,100,55,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Dragoon Doel
+69,Frilled Lizard,128,Earth,23,27,100,120,80,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Frilled Lizard
+1,Scissorhands,80,Earth,30,23,200,50,60,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Scissorhands
+99,Arrow Shooter,168,Earth,33,33,100,100,60,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Arrow Shooter
+108,Stinger,64,Earth,25,27,70,120,70,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Stinger
+26,Earth Shaker,200,Earth,33,27,140,60,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Earth Shaker
+299,Mappi,640,Dark,30,27,110,100,70,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Mappi I
+274,Crafty Thief,320,Dark,28,27,100,80,70,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Crafty Thief(Mappi)
+52,Erupting Chick,120,Wind,20,22,80,30,80,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Erupting Chick
+29,Roc,208,Wind,27,27,100,30,60,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Roc
+16,Dragonfly,296,Thunder,32,31,120,150,80,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Dragonfly
+14,Spider Urchin,100,Thunder,30,27,180,100,60,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Spider Urchin
+106,Killer Bird,140,Dark,23,27,80,120,80,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Killer Bird
+311,Virage(Head),1600,Non-Elemental,30,30,100,100,50,0,0,0,0,0,0,0,0,0,0,1000,0,None,0,Complete Virage(Head)
+313,Virage(Body),600,Non-Elemental,37,30,100,100,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Complete Virage(Body)
+312,Virage(Arm),300,Non-Elemental,37,30,100,100,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Complete Virage(Arm)
+83,Crafty Thief,200,Dark,30,27,100,80,80,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Crafty Thief
+82,Gangster,280,Earth,36,32,120,100,70,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Gangster
+79,Berserker,400,Dark,40,32,30,50,60,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Berserker
+109,Piggy,160,Earth,25,39,140,60,60,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Piggy
+300,Mappi,1200,Dark,37,32,110,100,65,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Mappi II
+301,Gehrich,2000,Earth,42,32,120,100,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Gehrich
+293,Lenus,3500,Water,44,62,100,160,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Lenus I
+86,Will-O'-Wisp,160,Fire,30,42,80,180,80,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Will-O'-Wisp I
+154,Will-O'-Wisp,160,Fire,30,42,80,180,80,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Will-O'-Wisp II
+18,Death,200,Dark,50,35,120,60,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Death
+85,Skeleton,200,Dark,35,35,100,100,60,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Skeleton
+70,Magician Bogy,800,Dark,35,40,80,160,70,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Magician Bogy
+340,Ghost Commander,1700,Dark,53,53,100,100,60,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Ghost Commander
+341,Ghost Knight,300,Dark,44,44,80,80,60,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Ghost Knight
+23,Glare,320,Water,33,47,80,120,70,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Glare
+76,Screw Shell,160,Water,40,47,200,50,60,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Screw Shell
+91,Mermaid,400,Water,44,58,80,140,60,0,0,0,0,0,0,0,0,0,0,10,10,Spirit Potion,8,Mermaid
+110,Sea Piranha,280,Water,35,44,60,100,80,0,0,0,0,0,0,0,0,0,0,0,0,Spear Frost,8,Sea Piranha
+12,Flabby Troll,560,Earth,52,33,60,60,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Flabby Troll
+294,Lenus,3000,Water,44,60,100,180,55,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Lenus II
+279,Regole,3000,Water,59,37,120,80,45,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Regole
+0,Flying Rat,1,Wind,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Flying Rat
+0,Forest Runner,1,Wind,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Forest Runner
+0,Wounded Bear,1,Earth,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Wounded Bear
+0,Dark Elf,1,Dark,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Dark Elf
+0,Moss Dresser,1,Earth,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Moss Dresser
+0,Kamuy,1,Non-Elemental,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Kamuy
+0,Kamuy Dummy,1,Non-Elemental,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Kamuy Dummy
+0,Puck,1,Earth,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Puck
+0,Fairy,1,Light,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Fairy
+0,Gnome,1,Earth,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Gnome
+0,Spinninghead,1,Non-Elemental,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Spinninghead
+0,Toad Stool,1,Earth,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Toad Stool
+0,WS Virage(Head),1,Non-Elemental,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,WS Virage(Head)
+0,WS Virage(Body),1,Non-Elemental,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,WS Virage(Body)
+0,WS Virage(Arm),1,Non-Elemental,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,WS Virage(Arm)
+0,Grand Jewel,1,Earth,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Grand Jewel
+0,Baby Dragon,1,Thunder,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Baby Dragon
+0,Beastie Dragon,1,Wind,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Beastie Dragon
+0,Mega Sea Dragon,1,Fire,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Mega Sea Dragon
+0,Deadly Spider,1,Earth,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Deadly Spider
+0,Wyvern,1,Wind,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Wyvern
+0,Divine Dragon,1,Non-Elemental,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Divine Dragon
+0,Divine Cannon,1,Non-Elemental,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Divine Cannon
+0,Divine Ball,1,Non-Elemental,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Divine Ball
+0,Freeze Knight,1,Water,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Freeze Knight
+0,Mammoth,1,Earth,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Mammoth
+0,Icicle Ball,1,Water,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Icicle Ball
+0,Land Skater,1,Water,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Land Skater
+0,Rocky Turtle,1,Earth,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Rocky Turtle
+0,Snow Cannon,1,Water,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Snow Cannon
+0,Windigo,1,Water,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Windigo
+0,Heart,1,Water,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Heart
+0,Metal Fang,1,Thunder,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Metal Fang
+0,Dragon Soldier,1,Earth,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Dragon Soldier
+0,Basilisk,1,Earth,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Basilisk
+0,Madman,1,Earth,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Madman
+344,Faust,1,Non-Elemental,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,20000,10000,Phantom Shield,100,Faust
+342,Dummy Faust,1,Non-Elemental,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Dummy Faust
+0,Wildman,1,Thunder,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Wildman
+0,Bowling,1,Non-Elemental,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Bowling
+0,Windy Weasel,1,Wind,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Windy Weasel
+0,White Ape,1,Earth,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,White Ape
+0,Mr. Bone,1,Dark,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Mr. Bone
+0,Polter Helm,1,Dark,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Polter Helm
+0,Polter Armor,1,Dark,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Polter Armor
+0,Polter Sword,1,Dark,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Polter Sword
+0,Spring Hitter,1,Non-Elemental,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Spring Hitter
+0,Succubus,1,Dark,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Succubus
+0,Maximum Volt,1,Thunder,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Maximum Volt
+0,Witch,1,Light,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Witch
+0,Terminator,1,Non-Elemental,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Terminator
+0,Scud Shark,1,Water,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Scud Shark
+0,Jelly,1,Water,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Jelly
+0,Stern Fish,1,Water,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Stern Fish
+0,Minotaur,1,Earth,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Minotaur
+0,Aqua King,1,Water,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Aqua King
+0,Professor,1,Wind,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Professor
+0,Guillotine,1,Dark,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Guillotine
+0,Harpy,1,Wind,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Harpy
+0,Sky Chaser,1,Wind,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Sky Chaser
+0,Death Purger,1,Dark,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Death Purger
+0,Undead,1,Dark,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Undead
+0,Loner Knight,1,Dark,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Loner Knight
+0,Hyper Skeleton,1,Dark,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Hyper Skeleton
+0,Specter,1,Dark,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Specter
+0,Human Hunter,1,Non-Elemental,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Human Hunter
+0,Cursed Jar,1,Non-Elemental,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Cursed Jar
+0,Treasure Jar,1,Non-Elemental,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Treasure Jar
+0,Lucky Jar,1,Non-Elemental,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Lucky Jar
+0,00PARTS,1,Non-Elemental,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,00PARTS
+0,Yellow Bird,1,Earth,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Yellow Bird
+0,Blue Bird,1,Water,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Blue Bird
+0,Red Bird,1,Fire,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Red Bird
+0,Rainbow Bird,1,Non-Elemental,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Rainbow Bird
