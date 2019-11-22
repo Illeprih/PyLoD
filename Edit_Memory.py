@@ -22,7 +22,7 @@ def read_address(pid, address):
     CloseHandle.arg_types = [w.HANDLE]
     CloseHandle.restype = w.BOOL
 
-    processHandle = open_process(0x10, False, pid)
+    process_handle = open_process(0x10, False, pid)
 
     if address[1] == 1:
         data = c_ubyte()
@@ -34,28 +34,28 @@ def read_address(pid, address):
         data = c_ulonglong
 
     bytes_read = c_ulonglong()
-    read_process_memory(processHandle, address[0], byref(data), sizeof(data), byref(bytes_read))
-    CloseHandle(processHandle)
+    read_process_memory(process_handle, address[0], byref(data), sizeof(data), byref(bytes_read))
+    CloseHandle(process_handle)
     return data.value
 
 
 def write_address(pid, address, value):
-    OpenProcess = windll.kernel32.OpenProcess
-    WriteProcessMemory = windll.kernel32.WriteProcessMemory
-    CloseHandle = windll.kernel32.CloseHandle
+    open_process = windll.kernel32.OpenProcess
+    write_process_memory = windll.kernel32.WriteProcessMemory
+    close_handle = windll.kernel32.CloseHandle
 
-    PROCESS_ALL_ACCESS = 0x1F0FFF
+    process_all_access = 0x1F0FFF
 
     size_lib = {1: 'B', 2: 'H', 4: 'L', 8: 'Q'}
-    datadummy = struct.pack(size_lib[address[1]], value)
-    buffer = c_char_p(datadummy)
-    bufferSize = address[1]
-    bytesRead = c_ulong(0)
+    data_dummy = struct.pack(size_lib[address[1]], value)
+    buffer = c_char_p(data_dummy)
+    buffer_size = address[1]
+    bytes_read = c_ulong(0)
 
-    processHandle = OpenProcess(PROCESS_ALL_ACCESS, False, int(pid))
+    process_handle = open_process(process_all_access, False, int(pid))
 
-    WriteProcessMemory(processHandle, address[0], buffer, bufferSize, byref(bytesRead))
+    write_process_memory(process_handle, address[0], buffer, buffer_size, byref(bytes_read))
 
-    CloseHandle(processHandle)
+    close_handle(process_handle)
 
 
