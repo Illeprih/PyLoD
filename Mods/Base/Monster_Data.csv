@@ -5,7 +5,7 @@ M_ID,M_name,HP,Element,AT,MAT,DF,MDF,Speed,A_AV,M_AV,P_Immune,M_Immune,P_Half,M_
 38,Trent,5,Earth,2,2,160,40,30,0,0,0,0,0,0,0,0,99,0,4,9,Pellet,10,Trent
 8,Goblin,4,Fire,2,1,120,120,40,0,0,0,0,0,0,0,0,0,0,4,6,Detonate Rock,10,Goblin
 24,Berserk Mouse,2,Dark,1,1,80,120,45,0,0,0,0,0,0,0,0,0,0,3,3,Healing Potion,10,Berserk Mouse
-134,Hellena Warden,9,Fire,3,3,100,100,50,0,0,0,0,0,0,0,0,99,0,6,9,None,100,Hellena Warden I
+134,Hellena Warden,9,Fire,3,3,100,100,50,0,0,0,0,0,0,0,0,99,0,6,9,None,0,Hellena Warden I
 261,Fruegel,90,Earth,5,3,100,80,50,0,0,0,0,0,0,0,0,0,0,300,50,Knight Shield,100,Fruegel I
 259,Hellena Warden,12,Fire,3,3,100,100,50,0,0,0,0,0,0,0,0,0,0,1,0,Healing Potion,100,Hellena Warden(F)
 260,Senior Warden,20,Fire,4,8,100,100,50,0,0,0,0,0,0,0,0,0,0,0,0,Healing Potion,100,Senior Warden(F)
