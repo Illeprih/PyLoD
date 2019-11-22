@@ -109,7 +109,7 @@ M_ID,M_name,HP,Element,AT,MAT,DF,MDF,Speed,A_AV,M_AV,P_Immune,M_Immune,P_Half,M_
 341,Ghost Knight,300,Dark,44,44,80,80,60,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Ghost Knight
 23,Glare,320,Water,33,47,80,120,70,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Glare
 76,Screw Shell,160,Water,40,47,200,50,60,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Screw Shell
-91,Mermaid,400,Water,44,58,80,140,60,0,0,0,0,0,0,0,0,0,0,10,10,Spirit Potion,8,Mermaid
+91,Mermaid,400,Water,44,58,80,140,60,0,0,0,0,0,0,0,0,0,0,10,10,Spirit Potion,18,Mermaid
 110,Sea Piranha,280,Water,35,44,60,100,80,0,0,0,0,0,0,0,0,0,0,0,0,Spear Frost,8,Sea Piranha
 12,Flabby Troll,560,Earth,52,33,60,60,50,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Flabby Troll
 294,Lenus,3000,Water,44,60,100,180,55,0,0,0,0,0,0,0,0,0,0,0,0,None,0,Lenus II
