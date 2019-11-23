@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cb3e13a9-f638-4fdc-9e54-763a3b3409dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoDDict.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoDDict.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mods/Base/Monster_Data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Mods/Base/Monster_Data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stat_Changer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stat_Changer.py" afterDir="false" />
     </list>
@@ -93,7 +94,42 @@
       <option name="project" value="LOCAL" />
       <updated>1574447669908</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Write moved to battle class">
+      <created>1574450474940</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1574450474940</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Stylistic changes">
+      <created>1574453241516</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1574453241516</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Continuous stat changes">
+      <created>1574453267659</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574453267659</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Continuous stat changes">
+      <created>1574457410114</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1574457410114</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added future support for other ePSXe versions">
+      <created>1574510577120</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1574510577121</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,7 +137,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -109,6 +147,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="List Edit (pycharm test)" />
-    <option name="LAST_COMMIT_MESSAGE" value="List Edit (pycharm test)" />
+    <MESSAGE value="Write moved to battle class" />
+    <MESSAGE value="Stylistic changes" />
+    <MESSAGE value="Continuous stat changes" />
+    <MESSAGE value="Added future support for other ePSXe versions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added future support for other ePSXe versions" />
   </component>
 </project>

@@ -31,8 +31,9 @@ def get_offset():
 class Battle:
     def __init__(self):
         self.encounter_ID = read_address(pid, static_addresses.encounter_ID)
-        self.m_point = read_address(pid, static_addresses.m_point) - 0x7F5B42C4
-        self.c_point = read_address(pid, static_addresses.c_point) - 0x7F5A8558
+        self.m_point = read_address(pid, static_addresses.m_point) + static_addresses.m_calc
+        self.c_point = read_address(pid, static_addresses.c_point) + static_addresses.c_calc
+        print(hex(self.c_point))
         self.monster_count = read_address(pid, static_addresses.monster_count)
         self.monster_ID_list = []
         for monster in range(self.monster_count):
@@ -199,7 +200,7 @@ class Options:
         self.mod = 'Base'
         self.monster_change = 1
         self.drop_change = 1
-        self.emulator = 'ePSXe 1.9'
+        self.emulator = 'ePSXe 2.0.5'
 
 
 cwd = os.getcwd()

@@ -52,45 +52,14 @@ class LoDDict:
             self.Drop_Item = item2num[stat_list[20]]
             self.Drop_Chance = int(stat_list[21])
 
-    class StaticAddresses:
-        encounter_value = [0xB1E488, 2]
-        encounter_ID = [0xB12A98, 2]
-        m_point = [0xB1E09C, 4]
-        c_point = [0xB13B78, 4]
-        monster_list = [[0xC272B0, 2], [0xC272B8, 2], [0xC272C0, 2], [0xC272C8, 2], [0xC272D0, 2]]
-        disc = [0xB139F8, 1]
-        party_count = [0xB1E100, 1]
-        monster_count = [0xB1E108, 1]
-        character_slot = [[0xB125F0, 1], [0xB125F4, 1], [0xB125F8, 1]]
-        unique_slot = [[0xAB5EDA, 2], [0xAB6082, 2], [0xAB622A, 2]]
-        item_drop = [[0xAB5ED1, 1], [0xAB6079, 1], [0xAB6221, 1]]
-        drop_chance = [[0xAB5ED0, 1], [0xAB6078, 1], [0xAB6220, 1]]
-        exp = [[0xAB5ECC, 2], [0xAB6074, 2], [0xAB621C, 2]]
-        gold = [[0xAB5ECE, 2], [0xAB6076, 2], [0xAB621E, 2]]
-        emulator_offset = 0
-
-        def __init__(self, emulator_offset):
-            self.encounter_value[0] = self.encounter_value[0] + emulator_offset
-            self.encounter_ID[0] = self.encounter_ID[0] + emulator_offset
-            self.m_point[0] = self.m_point[0] + emulator_offset
-            self.c_point[0] = self.c_point[0] + emulator_offset
-            self.monster_list = [[0xC272B0, 2], [0xC272B8, 2], [0xC272C0, 2], [0xC272C8, 2], [0xC272D0, 2]]
-            self.disc[0] = self.disc[0] + emulator_offset
-            self.party_count[0] = self.party_count[0] + emulator_offset
-            self.monster_count[0] = self.monster_count[0] + emulator_offset
-            self.character_slot = [[0xB125F0, 1], [0xB125F4, 1], [0xB125F8, 1]]
-            self.unique_slot = [[0xAB5EDA, 2], [0xAB6082, 2], [0xAB622A, 2]]
-            self.item_drop = [[0xAB5ED1, 1], [0xAB6079, 1], [0xAB6221, 1]]
-            self.drop_chance = [[0xAB5ED0, 1], [0xAB6078, 1], [0xAB6220, 1]]
-            self.exp = [[0xAB5ECC, 2], [0xAB6074, 2], [0xAB621C, 2]]
-            self.gold = [[0xAB5ECE, 2], [0xAB6076, 2], [0xAB621E, 2]]
-
 
 class StaticAddresses:
-    emulator_dict = {'ePSXe 1.9': 0xA579A0}
+    emulator_dict = {'ePSXe 1.9': 0xA579A0, 'ePSXe 2.0.5': 0x15F2020}
+    emulator_m_dict = {'ePSXe 1.9': -0x7F5B42C4, 'ePSXe 2.0.5': 0x17963BC}
+    emulator_c_dict = {'ePSXe 1.9': -0x7F5A8558, 'ePSXe 2.0.5': -0x7EA0DED8}
     encounter_value = [0xC6AE8, 2]
     encounter_ID = [0xBB0F8, 2]
-    m_point = [0xC66FC, 4]
+    m_point = [0xC66FC, 2]
     c_point = [0xBC1D8, 4]
     monster_list = [[0x1CF910, 2], [0x1CF918, 2], [0x1CF920, 2], [0x1CF928, 2], [0x1CF930, 2]]
     disc = [0xBC058, 1]
@@ -105,6 +74,8 @@ class StaticAddresses:
 
     def __init__(self, emulator):
         self.emulator_offset = self.emulator_dict[emulator]
+        self.m_calc = self.emulator_m_dict[emulator]
+        self.c_calc = self.emulator_c_dict[emulator]
         self.encounter_value[0] = self.encounter_value[0] + self.emulator_offset
         self.encounter_ID[0] = self.encounter_ID[0] + self.emulator_offset
         self.m_point[0] = self.m_point[0] + self.emulator_offset
