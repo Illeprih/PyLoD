@@ -199,18 +199,17 @@ class Options:
         self.mod = 'Base'
         self.monster_change = 1
         self.drop_change = 1
-        pass
+        self.emulator = 'ePSXe 1.9'
 
 
 cwd = os.getcwd()
 pid = get_pid()
 options = Options()
 dictionary = LoDDict(cwd, options.mod)
-static_addresses = StaticAddresses(emulator_offset=0)
+static_addresses = StaticAddresses(options.emulator)
 
 while True:
     while read_address(pid, static_addresses.encounter_value) != 41215:
-        print('No battle')
         time.sleep(1)
     time.sleep(1)
     battle = Battle()

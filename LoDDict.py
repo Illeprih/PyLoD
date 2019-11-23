@@ -87,41 +87,43 @@ class LoDDict:
 
 
 class StaticAddresses:
-    encounter_value = [0xB1E488, 2]
-    encounter_ID = [0xB12A98, 2]
-    m_point = [0xB1E09C, 4]
-    c_point = [0xB13B78, 4]
-    monster_list = [[0xC272B0, 2], [0xC272B8, 2], [0xC272C0, 2], [0xC272C8, 2], [0xC272D0, 2]]
-    disc = [0xB139F8, 1]
-    party_count = [0xB1E100, 1]
-    monster_count = [0xB1E108, 1]
-    character_slot = [[0xB125F0, 1], [0xB125F4, 1], [0xB125F8, 1]]
-    unique_slot = [[0xAB5EDA, 2], [0xAB6082, 2], [0xAB622A, 2]]
-    item_drop = [[0xAB5ED1, 1], [0xAB6079, 1], [0xAB6221, 1]]
-    drop_chance = [[0xAB5ED0, 1], [0xAB6078, 1], [0xAB6220, 1]]
-    exp = [[0xAB5ECC, 2], [0xAB6074, 2], [0xAB621C, 2]]
-    gold = [[0xAB5ECE, 2], [0xAB6076, 2], [0xAB621E, 2]]
+    emulator_dict = {'ePSXe 1.9': 0xA579A0}
+    encounter_value = [0xC6AE8, 2]
+    encounter_ID = [0xBB0F8, 2]
+    m_point = [0xC66FC, 4]
+    c_point = [0xBC1D8, 4]
+    monster_list = [[0x1CF910, 2], [0x1CF918, 2], [0x1CF920, 2], [0x1CF928, 2], [0x1CF930, 2]]
+    disc = [0xBC058, 1]
+    party_count = [0xC6760, 1]
+    monster_count = [0xC6768, 1]
+    character_slot = [[0xBAC50, 1], [0xBAC54, 1], [0xBAC58, 1]]
+    unique_slot = [[0x5E53A, 2], [0x5E6E2, 2], [0x5E88A, 2]]
+    item_drop = [[0x5E531, 1], [0x5E6D9, 1], [0x5E881, 1]]
+    drop_chance = [[0x5E530, 1], [0x5E6D8, 1], [0x5E880, 1]]
+    exp = [[0x5E52C, 2], [0x5E6D4, 2], [0x5E87C, 2]]
+    gold = [[0x5E52E, 2], [0x5E6D6, 2], [0x5E87E, 2]]
 
-    def __init__(self, emulator_offset):
-        self.encounter_value[0] = self.encounter_value[0] + emulator_offset
-        self.encounter_ID[0] = self.encounter_ID[0] + emulator_offset
-        self.m_point[0] = self.m_point[0] + emulator_offset
-        self.c_point[0] = self.c_point[0] + emulator_offset
-        #for address in range(len(self.monster_list)):
-            #self.monster_list[address][0] = self.monster_list[address][0] + emulator_offset
-        self.disc[0] = self.disc[0] + emulator_offset
-        self.party_count[0] = self.party_count[0] + emulator_offset
-        self.monster_count[0] = self.monster_count[0] + emulator_offset
+    def __init__(self, emulator):
+        self.emulator_offset = self.emulator_dict[emulator]
+        self.encounter_value[0] = self.encounter_value[0] + self.emulator_offset
+        self.encounter_ID[0] = self.encounter_ID[0] + self.emulator_offset
+        self.m_point[0] = self.m_point[0] + self.emulator_offset
+        self.c_point[0] = self.c_point[0] + self.emulator_offset
+        for address in range(len(self.monster_list)):
+            self.monster_list[address][0] = self.monster_list[address][0] + self.emulator_offset
+        self.disc[0] = self.disc[0] + self.emulator_offset
+        self.party_count[0] = self.party_count[0] + self.emulator_offset
+        self.monster_count[0] = self.monster_count[0] + self.emulator_offset
         for address in range(len(self.character_slot)):
-            self.character_slot[address][0] = self.character_slot[address][0] + emulator_offset
+            self.character_slot[address][0] = self.character_slot[address][0] + self.emulator_offset
         for address in range(len(self.unique_slot)):
-            self.unique_slot[address][0] = self.unique_slot[address][0] + emulator_offset
+            self.unique_slot[address][0] = self.unique_slot[address][0] + self.emulator_offset
         for address in range(len(self.item_drop)):
-            self.item_drop[address][0] = self.item_drop[address][0] + emulator_offset
+            self.item_drop[address][0] = self.item_drop[address][0] + self.emulator_offset
         for address in range(len(self.drop_chance)):
-            self.drop_chance[address][0] = self.drop_chance[address][0] + emulator_offset
+            self.drop_chance[address][0] = self.drop_chance[address][0] + self.emulator_offset
         for address in range(len(self.exp)):
-            self.exp[address][0] = self.exp[address][0] + emulator_offset
+            self.exp[address][0] = self.exp[address][0] + self.emulator_offset
         for address in range(len(self.gold)):
-            self.gold[address][0] = self.gold[address][0] + emulator_offset
+            self.gold[address][0] = self.gold[address][0] + self.emulator_offset
 
