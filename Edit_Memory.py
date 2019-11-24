@@ -18,9 +18,9 @@ def read_address(pid, address):
     GetLastError.arg_types = None
     GetLastError.restype = w.DWORD
 
-    CloseHandle = k32.CloseHandle
-    CloseHandle.arg_types = [w.HANDLE]
-    CloseHandle.restype = w.BOOL
+    close_handle = k32.CloseHandle
+    close_handle.arg_types = [w.HANDLE]
+    close_handle.restype = w.BOOL
 
     process_handle = open_process(0x10, False, pid)
 
@@ -35,7 +35,7 @@ def read_address(pid, address):
 
     bytes_read = c_ulonglong()
     read_process_memory(process_handle, address[0], byref(data), sizeof(data), byref(bytes_read))
-    CloseHandle(process_handle)
+    close_handle(process_handle)
     return data.value
 
 
