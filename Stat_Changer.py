@@ -13,18 +13,13 @@ def get_pid():
 
 
 def get_offset():
-    party_count = read_address(pid, static_addresses.party_count)
     disc_offset = {1: 0xD80, 2: 0x0, 3: 0x1458, 4: 0x1B0}
     char_offset = {1: 0x180, 2: -0x180, 3: 0x420, 4: 0x540, 5: 0x180, 6: 0x350, 7: 0x2F0, 8: -0x180}
-    if party_count == 3:
-        slot2 = read_address(pid, static_addresses.character_slot[1])
-        slot3 = read_address(pid, static_addresses.character_slot[2])
-        print(slot2)
-        print(slot3)
-        party_offset = char_offset[slot2] + char_offset[slot3]
+    if read_address(pid, static_addresses.party_count) == 3:
+        party_offset = char_offset[read_address(pid, static_addresses.character_slot[1])]\
+                       + char_offset[read_address(pid, static_addresses.character_slot[2])]
     else:
         party_offset = 0
-
     return disc_offset[read_address(pid, static_addresses.disc)] - party_offset
 
 
@@ -33,7 +28,6 @@ class Battle:
         self.encounter_ID = read_address(pid, static_addresses.encounter_ID)
         self.m_point = read_address(pid, static_addresses.m_point) + static_addresses.m_calc
         self.c_point = read_address(pid, static_addresses.c_point) + static_addresses.c_calc
-        print(hex(self.c_point))
         self.monster_count = read_address(pid, static_addresses.monster_count)
         self.monster_ID_list = []
         for monster in range(self.monster_count):
@@ -48,7 +42,7 @@ class Battle:
             self.monster_addresses.append(MonsterAddress(self.m_point, monster))
 
     def write(self):
-        if options.monster_change == 1:
+        if options.monster_change:
             i = 0
             for monster in self.monster_ID_list:
                 write_address(pid, battle.monster_addresses[i].HP, dictionary.stat_list[monster].max_HP)
@@ -79,14 +73,21 @@ class Battle:
                 write_address(pid, battle.monster_addresses[i].death_res,
                               dictionary.stat_list[monster].Death_Resist)
                 i += 1
-        if options.drop_change == 1:
-            i = 0
-            for monster in self.monster_unique_ID_list:
-                write_address(pid, static_addresses.exp[i], dictionary.stat_list[monster].EXP)
-                write_address(pid, static_addresses.gold[i], dictionary.stat_list[monster].Gold)
-                write_address(pid, static_addresses.item_drop[i], dictionary.stat_list[monster].Drop_Item)
-                write_address(pid, static_addresses.drop_chance[i], dictionary.stat_list[monster].Drop_Chance)
-                i += 1
+        if options.drop_change:
+            if options.drop_change_defined:
+                i = 0
+                for monster in self.monster_unique_ID_list:
+                    write_address(pid, static_addresses.exp[i], dictionary.stat_list[monster].EXP)
+                    write_address(pid, static_addresses.gold[i], dictionary.stat_list[monster].Gold)
+                    write_address(pid, static_addresses.item_drop[i], dictionary.stat_list[monster].Drop_Item)
+                    write_address(pid, static_addresses.drop_chance[i], dictionary.stat_list[monster].Drop_Chance)
+                    i += 1
+                else:
+                    i = 0
+                    for monster in self.monster_unique_ID_list:
+                        if monster in [325, 301, 287, 266, 300]:    # Drake, Gehrich, Greham, Kongol II, Mapi II
+                            write_address(pid, static_addresses.drop_chance[i], 100)
+                    i += 1
 
     def read(self):
         monster_list = []
@@ -198,9 +199,10 @@ class MonsterAddress:
 class Options:
     def __init__(self):
         self.mod = 'Base'
-        self.monster_change = 1
-        self.drop_change = 1
-        self.emulator = 'ePSXe 2.0.5'
+        self.monster_change = True
+        self.drop_change = True
+        self.drop_change_defined = True
+        self.emulator = 'ePSXe 1.9'
 
 
 cwd = os.getcwd()
