@@ -3,10 +3,10 @@ import csv
 
 class LoDDict:
     def __init__(self, cwd, folder):
-        self.num2element = {1: 'Water', 2: 'Earth', 4: 'Dark', 8: 'Non-Elemental', 16: 'Thunder', 32: 'Light',
-                            64: 'Wind', 128: 'Fire'}
-        self.element2num = {'Water': 1, 'Earth': 2, 'Dark': 4, 'Non-Elemental': 8, 'Thunder': 16, 'Wind': 32,
-                            'Light': 64, 'Fire': 128}
+        self.num2element = {0: 'None', 1: 'Water', 2: 'Earth', 4: 'Dark', 8: 'Non-Elemental', 16: 'Thunder',
+                            32: 'Light', 64: 'Wind', 128: 'Fire'}
+        self.element2num = {'None': 0, 'Water': 1, 'Earth': 2, 'Dark': 4, 'Non-Elemental': 8, 'Thunder': 16,
+                            'Light': 32, 'Wind': 64, 'Fire': 128}
         self.num2item = {}
         self.item2num = {}
         with open(cwd + "/Mods/" + folder + "/Item_List.txt", 'r') as file:
