@@ -33,6 +33,7 @@ class Battle:
         for monster in range(self.monster_count):
             address = list(static_addresses.monster_list[monster])
             address[0] += get_offset()
+            print(hex(address[0]))
             self.monster_ID_list.append(read_address(pid, address))
         self.monster_unique_ID_list = []
         for monster in range(len(list(set(self.monster_ID_list)))):
@@ -88,6 +89,8 @@ class Battle:
                         if monster in [325, 301, 287, 266, 300]:    # Drake, Gehrich, Greham, Kongol II, Mapi II
                             write_address(pid, static_addresses.drop_chance[i], 100)
                     i += 1
+        if options.dragoon_change:
+            pass
 
     def read(self):
         monster_list = []
@@ -202,6 +205,7 @@ class Options:
         self.monster_change = True
         self.drop_change = True
         self.drop_change_defined = True
+        self.dragoon_change = True
         self.emulator = 'ePSXe 1.9'
 
 

@@ -24,8 +24,26 @@ class LoDDict:
                 if i > 0:
                     self.stat_list[int(row[0])] = self.StatList(row[1:], self.element2num, self.item2num)
                 i += 1
+        self.dragoon_list = {}
+        with open(cwd + "/Mods/" + folder + "/Dragoon_Stats.csv", 'r') as file:
+            reader = csv.reader(file, delimiter=',', quotechar='"')
+            i = 0
+            for row in reader:
+                if i > 0:
+                    self.dragoon_list[i-1] = {1: self.DragoonList(row[1:5]), 2: self.DragoonList(row[5:9]),
+                                              3: self.DragoonList(row[9:13]), 4: self.DragoonList(row[13:17]),
+                                              5: self.DragoonList(row[17:21])}
+                i += 1
             del row
         del file
+
+    class DragoonList:
+        def __init__(self, stat_list):
+            self.DAT = stat_list[0]
+            self.DDEF = stat_list[1]
+            self.DMAT = stat_list[2]
+            self.DMDEF = stat_list[3]
+
 
     class StatList:
         def __init__(self, stat_list, element2num, item2num):
