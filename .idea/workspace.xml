@@ -4,7 +4,6 @@
     <list default="true" id="cb3e13a9-f638-4fdc-9e54-763a3b3409dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LoDDict.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoDDict.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mods/Base/Monster_Data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Mods/Base/Monster_Data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stat_Changer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stat_Changer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -129,7 +128,49 @@
       <option name="project" value="LOCAL" />
       <updated>1574510577121</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added ePSXe 2.0.5 support">
+      <created>1574514105185</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1574514105185</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Reordering of the CSV.">
+      <created>1574557070158</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1574557070159</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added 100% boss drop, when Drop changes are on but not defined.">
+      <created>1574557113679</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1574557113679</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Stylistic changes">
+      <created>1574561399173</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1574561399173</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added none to element dicts">
+      <created>1574561418782</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1574561418782</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added csv reader for Dragoon stats">
+      <created>1574623996640</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1574623996640</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,9 +189,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="List Edit (pycharm test)" />
     <MESSAGE value="Write moved to battle class" />
-    <MESSAGE value="Stylistic changes" />
     <MESSAGE value="Continuous stat changes" />
     <MESSAGE value="Added future support for other ePSXe versions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added future support for other ePSXe versions" />
+    <MESSAGE value="Added ePSXe 2.0.5 support" />
+    <MESSAGE value="Reordering of the CSV." />
+    <MESSAGE value="Added 100% boss drop, when Drop changes are on but not defined." />
+    <MESSAGE value="Stylistic changes" />
+    <MESSAGE value="Added none to element dicts" />
+    <MESSAGE value="Added csv reader for Dragoon stats" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added csv reader for Dragoon stats" />
   </component>
 </project>

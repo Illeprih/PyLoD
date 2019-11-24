@@ -39,11 +39,10 @@ class LoDDict:
 
     class DragoonList:
         def __init__(self, stat_list):
-            self.DAT = stat_list[0]
-            self.DDEF = stat_list[1]
-            self.DMAT = stat_list[2]
-            self.DMDEF = stat_list[3]
-
+            self.DAT = int(stat_list[0])
+            self.DDEF = int(stat_list[1])
+            self.DMAT = int(stat_list[2])
+            self.DMDEF = int(stat_list[3])
 
     class StatList:
         def __init__(self, stat_list, element2num, item2num):
@@ -77,7 +76,7 @@ class StaticAddresses:
     emulator_c_dict = {'ePSXe 1.9': -0x7F5A8558, 'ePSXe 2.0.5': -0x7EA0DED8}
     encounter_value = [0xC6AE8, 2]
     encounter_ID = [0xBB0F8, 2]
-    m_point = [0xC66FC, 2]
+    m_point = [0xC66FC, 4]
     c_point = [0xBC1D8, 4]
     monster_list = [[0x1CF910, 2], [0x1CF918, 2], [0x1CF920, 2], [0x1CF928, 2], [0x1CF930, 2]]
     disc = [0xBC058, 1]

@@ -33,7 +33,6 @@ class Battle:
         for monster in range(self.monster_count):
             address = list(static_addresses.monster_list[monster])
             address[0] += get_offset()
-            print(hex(address[0]))
             self.monster_ID_list.append(read_address(pid, address))
         self.monster_unique_ID_list = []
         for monster in range(len(list(set(self.monster_ID_list)))):
@@ -90,13 +89,19 @@ class Battle:
                             write_address(pid, static_addresses.drop_chance[i], 100)
                     i += 1
         if options.dragoon_change:
-            pass
+            for character in range(read_address(pid, static_addresses.party_count)):
+                char = CharacterAddress(self.c_point, character)
+                character_id = read_address(pid, char.ID)
+                d_lvl = read_address(pid, char.DLvl)
+                write_address(pid, char.D_AT, dictionary.dragoon_list[character_id][d_lvl].DAT)
+                write_address(pid, char.D_DF, dictionary.dragoon_list[character_id][d_lvl].DDEF)
+                write_address(pid, char.D_MAT, dictionary.dragoon_list[character_id][d_lvl].DMAT)
+                write_address(pid, char.D_MDF, dictionary.dragoon_list[character_id][d_lvl].DMDEF)
 
     def read(self):
         monster_list = []
         for monster in range(len(self.monster_ID_list)):
             monster_list.append(Monster(monster))
-
         while read_address(pid, static_addresses.encounter_value) == 41215:
             print('\n\n\n')
             for monster in range(self.monster_count):
@@ -197,6 +202,41 @@ class MonsterAddress:
         self.status_res = m_point + 0x1C - monster * 0x388, 1
         self.death_res = m_point + 0x0C - monster * 0x388, 1
         self.unique_index = m_point + 0x264 - monster * 0x388, 1
+
+
+class CharacterAddress:
+    def __init__(self, c_point, char):
+        self.ID = static_addresses.character_slot[char]
+        self.DLvl = c_point - 0x2 - char * 0x388, 1
+        self.HP = c_point - char * 0x388, 2
+        self.Max_HP = c_point + 0x8 - char * 0x388, 2
+        self.element = c_point + 0x6a - char * 0x388, 1
+        self.attack_element = c_point + 0x14 - char * 0x388, 1
+        self.atk = c_point + 0x2c - char * 0x388, 2
+        self.og_atk = c_point + 0x58 - char * 0x388, 2
+        self.mat = c_point + 0x2E - char * 0x388, 2
+        self.og_mat = c_point + 0x5A - char * 0x388, 2
+        self.df = c_point + 0x30 - char * 0x388, 2
+        self.og_df = c_point + 0x5E - char * 0x388, 2
+        self.mdf = c_point + 0x32 - char * 0x388, 2
+        self.og_mdf = c_point + 0x60 - char * 0x388, 2
+        self.spd = c_point + 0x2A - char * 0x388, 2
+        self.turn = c_point + 0x44 - char * 0x388, 2
+        self.og_spd = c_point + 0x5C - char * 0x388, 2
+        self.a_av = c_point + 0x38 - char * 0x388, 1
+        self.m_av = c_point + 0x3A - char * 0x388, 1
+        self.p_immune = c_point + 0x10 - char * 0x388, 1
+        self.m_immune = c_point + 0x10 - char * 0x388, 1
+        self.p_half = c_point + 0x10 - char * 0x388, 1
+        self.m_half = c_point + 0x10 - char * 0x388, 1
+        self.e_immune = c_point + 0x1A - char * 0x388, 1
+        self.e_half = c_point + 0x18 - char * 0x388, 1
+        self.status_res = c_point + 0x1C - char * 0x388, 1
+        self.death_res = c_point + 0x0C - char * 0x388, 1
+        self.D_AT = c_point + 0xA4 - char * 0x388, 2
+        self.D_MAT = c_point + 0xA6 - char * 0x388, 2
+        self.D_DF = c_point + 0xA8 - char * 0x388, 2
+        self.D_MDF = c_point + 0xAA - char * 0x388, 2
 
 
 class Options:
