@@ -30,8 +30,8 @@ class LoDDict:
     class StatList:
         def __init__(self, stat_list, element2num, item2num):
             self.name = stat_list[0]
-            self.max_HP = int(stat_list[1])
-            self.element = element2num[stat_list[2]]
+            self.element = element2num[stat_list[1]]
+            self.max_HP = int(stat_list[2])
             self.ATK = int(stat_list[3])
             self.MAT = int(stat_list[4])
             self.DF = int(stat_list[5])
