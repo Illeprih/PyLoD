@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb3e13a9-f638-4fdc-9e54-763a3b3409dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Battle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Static_Address.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Edit_Memory.py" beforeDir="false" afterPath="$PROJECT_DIR$/Edit_Memory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LoDDict.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoDDict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mods/Base/Monster_Data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Mods/Base/Monster_Data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stat_Changer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stat_Changer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,6 +16,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -170,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574623996640</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="D'AT, D'DF, D'MAT and D'MDF Can now be modified">
+      <created>1574639342106</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1574639342106</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,6 +216,7 @@
     <MESSAGE value="Stylistic changes" />
     <MESSAGE value="Added none to element dicts" />
     <MESSAGE value="Added csv reader for Dragoon stats" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added csv reader for Dragoon stats" />
+    <MESSAGE value="D'AT, D'DF, D'MAT and D'MDF Can now be modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="D'AT, D'DF, D'MAT and D'MDF Can now be modified" />
   </component>
 </project>

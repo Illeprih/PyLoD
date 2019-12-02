@@ -1,9 +1,10 @@
 from ctypes import *
 from ctypes import wintypes as w
 import struct
+import config
 
 
-def read_address(pid, address):
+def read_address(address):
     k32 = windll.kernel32
 
     open_process = k32.OpenProcess
@@ -22,7 +23,7 @@ def read_address(pid, address):
     close_handle.arg_types = [w.HANDLE]
     close_handle.restype = w.BOOL
 
-    process_handle = open_process(0x10, False, pid)
+    process_handle = open_process(0x10, False, config.pid)
 
     if address[1] == 1:
         data = c_ubyte()
@@ -39,7 +40,7 @@ def read_address(pid, address):
     return data.value
 
 
-def write_address(pid, address, value):
+def write_address(address, value):
     open_process = windll.kernel32.OpenProcess
     write_process_memory = windll.kernel32.WriteProcessMemory
     close_handle = windll.kernel32.CloseHandle
@@ -52,7 +53,7 @@ def write_address(pid, address, value):
     buffer_size = address[1]
     bytes_read = c_ulong(0)
 
-    process_handle = open_process(process_all_access, False, int(pid))
+    process_handle = open_process(process_all_access, False, int(config.pid))
 
     write_process_memory(process_handle, address[0], buffer, buffer_size, byref(bytes_read))
 

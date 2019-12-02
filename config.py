@@ -1,0 +1,6 @@
+pid = ""
+cwd = ""
+options = ""
+dictionary = ""
+static_address = ""
+battle = ""
